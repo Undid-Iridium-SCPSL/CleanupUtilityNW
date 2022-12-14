@@ -16,21 +16,15 @@ Ability to control what items get cleaned up, and when.
 
 This solution Hijacks the methods that instantiate the ServerCreatePickup of items, and of ammo. I went down this route to allow the ability to lock in individual patch's per type, and force the ItemPickupBase to be grabbed after it was done being touched by NW's instantiation code (or at least right after). If you have any suggestions please don't hesitate to open an issue. This also includes the zone the pickup was created in, which allows you specify where items can be deleted from. Thanks
 
-* Add Probability of item to be cleaned up (Feature, may not do unless desire for)
-* ~~Add zone choices~~ Done V1.1.2
-* ~~Add documentation in code. Also justification for queue is that I could use it for more than just an escape method (No longer true based on granular filtering, so swapping to dictionary system). Also justification for two transpilers was for after-NW touching (Not needed after some testing, reference object is delayed long enough it is a non-relevant factor. If I was cleaning items up immediately then maybe; however, behavior will remain the same in essence)~~ Done
-
 # Installation
 
-**[EXILED](https://github.com/Exiled-Team/EXILED) must be installed for this to work.**
+**[NWAPI](https://github.com/northwood-studios/NwPluginAPI) must be installed for this to work.**
 
-Emergency Bug Fix V1.1.6
-
-Current plugin version: V1.1.5 (If you do not have items being cleaned up fast in 914, this will work but I would recommend V1.1.6)
+Current plugin version: V1.0.0 
 
 ## REQUIREMENTS
-* Exiled: V5.2.0
-* SCP:SL Server: V11.2
+* Exiled: V12.0.0-RC.2
+* SCP:SL Server: V12
 
 
 Example configuration
