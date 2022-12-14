@@ -94,6 +94,8 @@ namespace CleanupUtilityNW
         [PluginEvent(ServerEventType.RagdollSpawn)]
         void onRagDollSpawn(IPlayer player, IRagdollRole ragdoll, DamageHandlerBase baseHandler)
         {
+            //TODO NW is not calling this AFAIK, broken for now. I don't want to search EVERY item in existence
+            //to determine if it is a ragdoll (which is the command available, and how it does it)
             allRagdolls.Add(ragdoll.Ragdoll); 
         }
         
