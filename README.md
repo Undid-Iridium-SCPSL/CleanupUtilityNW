@@ -23,7 +23,7 @@ This solution Hijacks the methods that instantiate the ServerCreatePickup of ite
 Current plugin version: V1.0.0 
 
 ## REQUIREMENTS
-* Exiled: V12.0.0-RC.2
+* NWAPI: V12.0.0-RC.2
 * SCP:SL Server: V12
 * [Harmony 2.2.2](https://github.com/pardeike/Harmony/releases/tag/v2.2.2.0)
 
