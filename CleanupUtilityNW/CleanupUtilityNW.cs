@@ -54,7 +54,7 @@ namespace CleanupUtilityNW
         }
 
 
-        [PluginEntryPoint("CleanupUtilityNW", "1.0.0", "CLean up items by zone, item, and time", "Undid Iridium")]
+        [PluginEntryPoint("CleanupUtilityNW", "1.0.1", "CLean up items by zone, item, and time", "Undid Iridium")]
         void LoadPlugin()
         {
             Instance = this;
