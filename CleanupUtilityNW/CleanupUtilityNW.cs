@@ -35,20 +35,6 @@ namespace CleanupUtilityNW
         
         public List<BasicRagdoll> allRagdolls
         {
-            // get
-            // {
-            //     // if (ragDollDataInternal.IsEmpty())
-            //     // {
-            //     //     ragDollDataInternal = (from r in UnityEngine.Object.FindObjectsOfType<BasicRagdoll>()
-            //     //         orderby r.Info.CreationTime descending
-            //     //         select r).ToList<BasicRagdoll>();
-            //     // }
-            //     //
-            //     // return ragDollDataInternal;
-            //     return (from r in UnityEngine.Object.FindObjectsOfType<BasicRagdoll>()
-            //     orderby r.Info.CreationTime descending
-            //     select r).ToList();
-            // }
             get;
             set;
         }
@@ -64,6 +50,7 @@ namespace CleanupUtilityNW
 
             PickupChecker = new PickupChecker(this);
             PluginAPI.Events.EventManager.RegisterEvents(this);
+            // PluginAPI.Events.EventManager.RegisterEvents<PickupChecker>(this);
             Log.Debug("We have started our plugin CleanupUtilityNW!!", Instance.Config.Debug);
         }
 
