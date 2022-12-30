@@ -298,17 +298,11 @@ namespace CleanupUtilityNW
 
             //
             Player curPlayer = Player.Get<Player>(curRagdoll.Info.OwnerHub);
-            // Traverse curRagdollObject = Traverse.Create(curRagdoll);
             if (plugin.playerPocketChecker.TryGetValue(curPlayer, out bool inPocket))
             {
                 if (!inPocket) return;
                 Log.Debug($"Deleting a Ragdoll {curRagdoll} in pocket dimension", plugin.Config.Debug);
-
                 NetworkServer.Destroy(curRagdoll.gameObject);
-                // curRagdollObject.Method("OnCleanup").GetValue();
-                // curRagdollObject.Method("OnDestroy").GetValue();
-                //RagdollManager.OnRemovedRagdoll(curRagdoll);
-
                 return;
             }
 
@@ -333,8 +327,6 @@ namespace CleanupUtilityNW
 
             Log.Debug($"Deleting a Radoll {curRagdoll} in zone {curRagdoll}", plugin.Config.Debug);
             NetworkServer.Destroy(curRagdoll.gameObject);
-            // curRagdollObject.Method("OnCleanup").GetValue();
-            // curRagdollObject.Method("OnDestroy").GetValue();
         }
     }
 }
